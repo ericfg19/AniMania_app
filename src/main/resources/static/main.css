@@ -1,0 +1,149 @@
+
+
+body {
+  background-image: url('https://efg-infnetbuckets3.s3.amazonaws.com/wall.jpg');
+  font-family: Oswald;
+  font-size: 16pt;
+
+}
+
+input[type="text"] {
+	font-family: Oswald;
+	font-size: 18pt;
+	height: 60px";
+}
+
+
+select {
+  width: 300px;
+  font-size: 16pt;
+}
+
+option {
+  width: 250px;
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+
+.container {
+ 	background: rgb(255,255,255);
+ 	background: linear-gradient(90deg, rgba(255,255,255,0.3477591720281863) 0%, rgba(246,246,246,1) 5%, rgba(245,245,245,1) 95%, rgba(255,255,255,0.35) 100%); 
+	width: 80%;
+}
+
+.panel-group {
+	position: center;
+	width: 75%;
+}
+/* container home */
+.container2 {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(246,246,246,1) 5%, rgba(245,245,245,1) 95%, rgba(255,255,255,0.8547619731486344) 100%); 
+}
+
+.och {
+  display: grid; 
+  grid-template-columns: 1.7fr 0.9fr 0.4fr; 
+  grid-template-rows: 6.5fr; 
+  gap: 7px 16px; 
+  grid-template-areas: 
+    "area1 area2 area3"; 
+}
+.area1 { grid-area: area1; }
+.area3 { grid-area: area3; }
+.area2 { grid-area: area2; }
+
+/* container cadastro */
+.container3 {
+  display: grid; 
+  grid-template-columns: 1.2fr 0.8fr; 
+  grid-template-rows: 1fr; 
+  gap: 5px 20px; 
+  grid-template-areas: 
+    "cadastro1 cadastro2"; 
+}
+.cadastro1 { grid-area: cadastro1; }
+.cadastro2 { grid-area: cadastro2; }
+
+.checkbox {
+  font-size: 14pt;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.9em;
+}
+
+#pass {
+
+  color: transparent;
+  text-shadow: #111 0 0 15px;
+  transition: 0.4s;
+
+}
+
+/* fade in mensagens */
+
+.fade-out {
+  animation: fadeOut easet 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut easet 5s;
+  animation-fill-mode: forwards;
+}@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    transform: translateX(0%);
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    transform: translateX(0%);
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    transform: translateX(0%);
+}
+}
