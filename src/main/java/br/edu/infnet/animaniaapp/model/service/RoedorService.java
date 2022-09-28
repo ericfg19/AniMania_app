@@ -35,4 +35,8 @@ public class RoedorService {
 	public List<Roedor> obterLista(Usuario usuario){		
 		return (List<Roedor>) roedorRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome", "raca", "peso"));
 	}
+	
+	public long obterQtde() {
+		return roedorRepository.count();
+	}
 }

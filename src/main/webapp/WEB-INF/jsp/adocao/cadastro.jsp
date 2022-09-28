@@ -28,6 +28,11 @@ function goBack() {
 				<label>Título:</label>		
 				<input type="text" value="Primeira Adoção" name="titulo" class="form-control">
 			</div>
+			
+			<div class="form-group">
+				<label>Data:</label>		
+				<input type="datetime-local" name="dtAdocao" class="form-control">
+			</div>
 
 			<div class="form-group">
 				

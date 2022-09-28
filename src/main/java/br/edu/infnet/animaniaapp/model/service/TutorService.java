@@ -35,4 +35,8 @@ public class TutorService {
 	public List<Tutor> obterLista(Usuario usuario){		
 		return (List<Tutor>) tutorRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome"));
 	}
+	
+	public long obterQtde() {
+		return tutorRepository.count();
+	}
 }

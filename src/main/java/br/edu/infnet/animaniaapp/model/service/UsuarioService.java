@@ -32,7 +32,13 @@ public class UsuarioService {
 		return usuarioRepository.autenticacao(email, senha);
 	}
 	
+	public long obterQtde() {
+		return usuarioRepository.count();
+	}
+	
 	public Optional<Usuario> findOne(Integer id) {
 		return usuarioRepository.findById(id);
 	}
+	
+	
 }

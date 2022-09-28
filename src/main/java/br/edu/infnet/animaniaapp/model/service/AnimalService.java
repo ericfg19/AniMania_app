@@ -36,4 +36,8 @@ public class AnimalService {
 	public List<Animal> obterLista(Usuario usuario){		
 		return (List<Animal>) animalRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome"));
 	}
+	
+	public long obterQtde() {
+		return animalRepository.count();
+	}
 }

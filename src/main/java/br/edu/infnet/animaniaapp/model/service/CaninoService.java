@@ -35,4 +35,8 @@ public class CaninoService {
 	public List<Canino> obterLista(Usuario usuario){		
 		return (List<Canino>) caninoRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome", "raca", "peso"));
 	}
+	
+	public long obterQtde() {
+		return caninoRepository.count();
+	}
 }

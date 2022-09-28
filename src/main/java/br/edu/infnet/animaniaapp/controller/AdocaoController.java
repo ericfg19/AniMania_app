@@ -1,11 +1,16 @@
 package br.edu.infnet.animaniaapp.controller;
 
+import java.time.LocalDateTime;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
 import br.edu.infnet.animaniaapp.model.domain.*;
@@ -51,7 +56,10 @@ public class AdocaoController {
 	}
 
 	@PostMapping(value = "/adocao/incluir")
-	public String incluir(Adocao adocao, @SessionAttribute("user") Usuario usuario) {
+	public String incluir(Adocao adocao, @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime dtAdocao, @SessionAttribute("user") Usuario usuario) {
+		
+		
+		adocao.setData(dtAdocao);
 		
 		//teste inclusão
 		System.out.println("TITULO = " + adocao.getTitulo());

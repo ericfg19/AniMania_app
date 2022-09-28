@@ -41,7 +41,7 @@ footer {
 
 .panel-group {
 	position: center;
-	width: 75%;
+	width: 100%;
 }
 /* container home */
 .container2 {
@@ -80,6 +80,18 @@ footer {
   display: grid;
   grid-template-columns: 1em auto;
   gap: 0.9em;
+}
+
+.badge {
+  display: inline-table;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  font-size: 16pt;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50%;
+	
 }
 
 #pass {

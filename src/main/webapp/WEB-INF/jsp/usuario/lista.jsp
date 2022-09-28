@@ -96,12 +96,16 @@ function myFunction() {
 				     <td>${u.endereco.bairro}-${u.endereco.uf}</td>       
 			         <td>${u.tutores.size()}</td>
 		         </c:if>
-			     
+			        
 			     <c:if test="${user.admin}">
-			     
-			     			     
 			     	<td>
-			     	<a href="/usuario/${u.id}/editar"><button class="btn btn-gray">Editar</button></a> <a href="/usuario/${u.id}/excluir"><button class="btn btn-gray">Excluir</button></a></td>
+			     	<c:choose>
+			     		<c:when test="${user.id != u.id}">
+					     	<a href="/usuario/${u.id}/editar"><button class="btn btn-gray">Editar</button></a> 
+				     		<a href="/usuario/${u.id}/excluir"><button class="btn btn-gray">Excluir</button></a>
+			     		</c:when>
+			     	</c:choose>
+			     	</td>
 			     </c:if>
 			   </tr>
 			</c:forEach>

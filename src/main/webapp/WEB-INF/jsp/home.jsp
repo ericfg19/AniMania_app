@@ -53,13 +53,22 @@
 				        </h4>
 				      </div>
 				      <div id="collapse1" class="panel-collapse collapse">
-				        <div class="panel-body"><strong>Este projeto é apenas para fins acadêmicos.</strong></div>
+				        <div class="panel-body">
+				        	<h3>Registros Totais:</h3>
+								<ul class="list-group">
+									<c:forEach var="m" items="${mapa}">
+									  <li class="list-group-item">${m.key}<span class="badge">${m.value}</span></li>
+									</c:forEach>
+								</ul>	
+				        	
+				        </div>
+				        <div class="panel-body"><strong>Este projeto é apenas para fins acadêmicos.</strong>
+				        </div>
 				        <div class="panel-footer"><code>Idealizado para mostrar as competências de matérias da faculdade, seu uso comercial não é permitido.</code></div>
 				      </div>
 				    </div>
 				  </div>
-				
-	      		
+	
 		  </div>
 		  
 		  <div class="area3">

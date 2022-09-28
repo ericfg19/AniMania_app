@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@page import="java.util.Arrays"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
@@ -61,7 +62,10 @@
 			     <td>${ad.id}</td>     	
 			   </c:if>
 			     <td>${ad.titulo}</td>
-			     <td>${ad.data}</td>
+			     <td>
+			     	<fmt:parseDate value="${ad.data}" pattern="yyyy-MM-dd" var="dataFormat" type="date"/>
+					<fmt:formatDate pattern="dd/MM/yyyy" value="${dataFormat}"/>
+				</td>
 			     <td>${ad.tutor.nome}</td>
 			     <td>${ad.animais.size()}</td>
 			     <!--<td>Doação</td> -->

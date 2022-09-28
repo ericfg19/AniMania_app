@@ -35,4 +35,8 @@ public class FelinoService {
 	public List<Felino> obterLista(Usuario usuario){		
 		return (List<Felino>) felinoRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome", "raca", "peso"));
 	}
+	
+	public long obterQtde() {
+		return felinoRepository.count();
+	}
 }

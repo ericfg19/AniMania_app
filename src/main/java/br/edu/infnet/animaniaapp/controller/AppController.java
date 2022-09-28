@@ -1,5 +1,8 @@
 package br.edu.infnet.animaniaapp.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +15,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import br.edu.infnet.animaniaapp.model.domain.Usuario;
+import br.edu.infnet.animaniaapp.model.service.AppService;
 import br.edu.infnet.animaniaapp.model.service.UsuarioService;
 
 @SessionAttributes("user")
@@ -21,11 +25,19 @@ public class AppController {
 	@Autowired
 	private UsuarioService usuarioService;
 	
+	@Autowired
+	private AppService appService;
+	
 	private String mensagem;
 
 	@GetMapping(value = "/")
-	public String telaHome() {		
+	public String telaHome(Model model) {		
+
+		
+		model.addAttribute("mapa", appService.obterMapa());
+		
 		return "home";
+		
 	}
 
 	@GetMapping(value = "/login")

@@ -35,4 +35,8 @@ public class AdocaoService {
 	public List<Adocao> obterLista(Usuario usuario){		
 		return (List<Adocao>) adocaoRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "data", "titulo"));
 	}
+	
+	public long obterQtde() {
+		return adocaoRepository.count();
+	}
 }

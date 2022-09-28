@@ -15,9 +15,12 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Table(name = "TAdocao")
 public class Adocao {
 	
@@ -35,11 +38,12 @@ public class Adocao {
 	@JoinColumn(name = "idUsuario")
 	private Usuario usuario;
 	
+
 	public Adocao() {
 		data = LocalDateTime.now();
 	}
 
-	//getters and setters
+	//getters and setters via lombok
 	
 	
 
