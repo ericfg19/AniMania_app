@@ -18,8 +18,7 @@ no sistema, não terão acesso as entradas de outros usuários.
 
 
 
-![](link diagrama de classes)
-![](link diagrama de casos de uso)
+![](https://github.com/ericfg19/AniMania_app/blob/main/src/main/resources/static/diagrama_classes.jpg)
 
 ## Este projeto é apenas para fins acadêmicos.
 ### Idealizado para mostrar as competências na matéria <code>Java Web</code>, seu uso comercial não é permitido.
