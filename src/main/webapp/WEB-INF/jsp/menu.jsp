@@ -10,14 +10,16 @@
         <li class="active"><a href="/">Home</a></li>
 			<c:if test="${not empty user}">
 		      <li><a href="/usuario/listar">Usuários</a></li>
-			      <c:if test="${user.admin}">
+			     <c:if test="${user.admin}">
 			      	<li><a href="/tutor/listar">Tutores</a></li>
-			      </c:if>
+			     </c:if>
 			   <li><a href="/animal/listar">Animais</a></li>
 			   <li><a href="/canino/listar">Canino</a></li>
 			   <li><a href="/felino/listar">Felino</a></li>
 			   <li><a href="/roedor/listar">Roedor</a></li>
-			   <li><a href="/adocao/listar">Adoções</a></li>
+			   	<c:if test="${user.admin}">
+			   		<li><a href="/adocao/listar">Adoções</a></li>
+			   	</c:if>
 			</c:if>	      
         
 	    	<c:if test="${empty user}">

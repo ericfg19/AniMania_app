@@ -15,17 +15,42 @@
 		<div class="text-center">
 		    <h1>Instituto Infnet</h1>
 		    <h2>Análise e Desenvolvimento de Sistemas</h2>
-		    <img src="/logo.png" />
+		    <img src="/logo.png" alt="logo.png"/>
 		    <hr />
 		    <h3>Eric Fagundes Guimarães</h3>
 		
 		    <h3>ASSESSMENT</h3>
 		    <h4>Desenvolvimento Java [22E2-22E3]</h4>
-		    <h3>Professor - Elberth Soares</h3>
+		    <h3>Professores</h3>
+		    <h3>Elberth Soares</h3>
+		    <h3>Luiz Paulo</h3>
+		    <h3>Rubens Oliveira</h3>
 		    <h6>23/09/2022 - Rio de Janeiro</h6>
 		    
 		</div>
-	</div>
+		
+		<center>
+		<div class="panel-group">
+				    <div class="panel panel-default">
+				      <div class="panel-heading">
+				        <h4 class="panel-title">
+				          <a data-toggle="collapse" href="#collapse1">Diagrama de Classes</a>
+				        </h4>
+				      </div>
+				      <div id="collapse1" class="panel-collapse collapse">
+				        <div class="panel-body">
+				        	
+								<img src="/diagrama_classes.jpg" alt="diagrama_classes.jpg"/>
+				        	
+				        </div>
+				        <div class="panel-body"><strong>Este projeto é apenas para fins acadêmicos.</strong>
+				        </div>
+				        <div class="panel-footer"><code>Idealizado para mostrar as competências de matérias da faculdade, seu uso comercial não é permitido.</code></div>
+				      </div>
+				    </div>
+				  </div>
+		</div>
+		</center>
 	
 	<!-- FOOTER -->
     <footer>

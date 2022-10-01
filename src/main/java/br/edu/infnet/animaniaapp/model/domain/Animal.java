@@ -29,7 +29,7 @@ public class Animal {
 	private float valor;
 	private int idade;
 	@ManyToMany(mappedBy = "animais")
-	private List<Adocao> pedidos;
+	private List<Adocao> adocoes;
 	@ManyToOne
 	@JoinColumn(name = "idUsuario")
 	private Usuario usuario;
